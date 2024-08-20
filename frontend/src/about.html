@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn more about our mission, values, and team. Find out how we help you buy, rent, or sell properties with ease.">
+    <meta name="keywords" content="about us, mission, values, team, real estate, property services">
+
+    <title>About Us - FindYourHome</title>
+    <link rel="shortcut icon" href="/frontend/src/assets/images/LOGO.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/src/assets/css/about.css"> <!-- External CSS for custom styles -->
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        <div class="navbar-div">
+            <div class="nav-element-logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/frontend/src/assets/images/LOGO.png" alt="Company Logo" width="100" height="50">
+                    <!-- Company Logo -->
+                </a>
+            </div>
+
+            <div class="nav-element-searchBox">
+                <form id="searchForm" class="d-flex" role="search">
+                    <input id="searchInput" class="form-control me-2 searchBox-input" type="search" name="query"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
+            <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end nav-element-links" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rent.html">Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buy.html">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sell.html">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" style="border-bottom: 2px solid black;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="logoutButton" type="button" class="btn btn-primary">LOGOUT</button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-us py-5 bg-white">
+        <div class="container">
+            <h2 data-aos="fade-up">
+                <i class="bi bi-house-fill"></i> About Us
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="100">FindYourHome is dedicated to helping people find the perfect
+                property. We have developed the website to connecting renters and buyers with their dream homes.</p>
+
+            <h3 data-aos="fade-up" data-aos-delay="200">Our Mission</h3>
+            <p data-aos="fade-up" data-aos-delay="300">Our mission is to make the property search process as smooth and
+                stress-free as possible. We aim to provide reliable, transparent, and easy-to-use services that help
+                people find the perfect place to call home.</p>
+
+            <h3 data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-people-fill"></i> Our Team
+            </h3>
+            <div class="row">
+                <div class="col-md-4 text-center" data-aos="fade-left" data-aos-delay="500">
+                    <div class="team-member">
+                        <img src="/frontend/src/assets/images/rohan_ekashinge.jpg" alt="Rohan Ekashinge">
+                        <h4>Rohan Ekashinge</h4>
+                        <p>Developer</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <h3 data-aos="fade-up" data-aos-delay="500">Our Story</h3>
+            <p data-aos="fade-up" data-aos-delay="500">
+                FindYourHome started with a simple goal: to make finding rental properties easier and more transparent.
+                To help people to search all types of properties such as House, Rooms, Flats and Stores. Also property
+                owners can add their own properties for selling and renting to get customers quicker and easily.
+            </p>
+
+            <h3 data-aos="fade-up" data-aos-delay="500">Our Values</h3>
+            <p data-aos="fade-up" data-aos-delay="500">
+                We believe in honesty, transparency, and excellent customer
+                service. Our team is committed to ensuring that every customer has a positive experience with
+                FindYourHome.
+            </p>
+
+            <h3 data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-telephone-fill"></i> Contact Us
+            </h3>
+            <p data-aos="fade-up" data-aos-delay="500">
+                If you'd like to learn more about us or have any questions, feel
+                free to contact us,
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Contact Us -->
+    <section class="contact-us py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h4>Get in Touch</h4>
+                    <p>We're here to help with any questions or concerns you may have.</p>
+                    <p><strong>Address:</strong> Kolhapur, Maharashtra 416229</p>
+                    <p><strong>Phone:</strong> +91 8149584900</p>
+                    <p><strong>Email:</strong> ekashingerohan01@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 1200,
+                once: true,
+            });
+
+            function checkUserId() {
+                const userId = sessionStorage.getItem('userId');
+                if (!userId) {
+                    // Redirect to login or another page if userId is null
+                    window.location.href = 'http://127.0.0.1:5500/frontend/src/index.html';
+                }
+            }
+
+            // Call checkUserId when the page loads
+            checkUserId();
+
+            const logoutButton = document.getElementById('logoutButton');
+
+            // Add click event listener for logout
+            logoutButton.addEventListener('click', () => {
+                // Remove userId from session storage
+                sessionStorage.removeItem('userId');
+
+                // Redirect to the specified URL
+                window.location.href = 'http://127.0.0.1:5500/frontend/src/index.html';
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

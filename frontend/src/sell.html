@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="List your property for sale or rent. Use our simple form to add your property to our database and reach potential buyers or renters.">
+    <meta name="keywords"
+        content="sell properties, add property, property for sale, real estate listing, rent properties">
+
+    <title>Sell Property</title>
+    <link rel="shortcut icon" href="/frontend/src/assets/images/LOGO.png" type="image/x-icon">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/frontend/src/assets/css/sell.css"> <!-- External CSS for custom styles -->
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        <div class="navbar-div">
+            <div class="nav-element-logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/frontend/src/assets/images/LOGO.png" alt="Company Logo" width="100" height="50">
+                    <!-- Company Logo -->
+                </a>
+            </div>
+
+            <div class="nav-element-searchBox">
+                <form id="searchForm" class="d-flex" role="search">
+                    <input id="searchInput" class="form-control me-2 searchBox-input" type="search" name="query"
+                        placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
+            <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end nav-element-links" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rent.html">Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buy.html">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" style="border-bottom: 2px solid black;">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="logoutButton" type="button" class="btn btn-primary">LOGOUT</button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section add List Property -->
+    <section class="add-property py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-down">List Your Property</h2>
+            <form class="property-form" action="add-property" method="POST" enctype="multipart/form-data">
+
+                <!-- Property Type (Sale/Rent) -->
+                <div class="mb-3" data-aos="fade-up">
+                    <label for="property-for" class="form-label">Property For</label>
+                    <select class="form-select" id="property-for" name="property_for" required>
+                        <option value="">Choose...</option>
+                        <option value="sale">Sale</option>
+                        <option value="rent">Rent</option>
+                    </select>
+                </div>
+
+                <!-- Property Type (House, Room, Flat, Store) -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <label for="property-type" class="form-label">Property Type</label>
+                    <select class="form-select" id="property-type" name="property_type" required>
+                        <option value="">Choose...</option>
+                        <option value="house">House</option>
+                        <option value="room">Room</option>
+                        <option value="flat">Flat</option>
+                        <option value="store">Store</option>
+                    </select>
+                </div>
+
+                <!-- Property Location -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <label for="property-location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="property-location" name="location"
+                        placeholder="Enter the location" required>
+                </div>
+
+                <!-- Property Price -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="300">
+                    <label for="property-price" class="form-label">Rent per Month or Selling price </label>
+                    <input type="number" class="form-control" id="property-price" name="price"
+                        placeholder="Enter the price" required>
+                </div>
+
+                <!-- Negotiable Option -->
+                <div class="form-check mb-3" data-aos="fade-up" data-aos-delay="400">
+                    <input class="form-check-input" type="checkbox" id="negotiable" name="negotiable">
+                    <label class="form-check-label" for="negotiable">Price is negotiable</label>
+                </div>
+
+                <!-- Property Size -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                    <label for="property-size" class="form-label">Size</label>
+                    <input type="number" class="form-control" id="property-size" name="property_size"
+                        placeholder="Enter the size (e.g., square feet)">
+                </div>
+
+                <!-- Property Description -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                    <label for="property-description" class="form-label">Description</label>
+                    <textarea class="form-control" id="property-description" name="property_description" rows="3"
+                        placeholder="Enter a brief description"></textarea>
+                </div>
+
+                <!-- Upload Property Images -->
+                <div class="container py-5" data-aos="fade-up" data-aos-delay="300">
+                    <div class="mb-3">
+                        <label for="property-images" class="form-label">Upload Property Images (up to 5, max 3 MB
+                            each)</label>
+                        <input type="file" class="form-control" id="property-images" name="property_images[]"
+                            accept="image/*" multiple>
+                        <!-- Container for image previews -->
+                        <div id="image-preview-container" class="mt-3"></div>
+                    </div>
+                </div>
+
+
+
+                <!-- Owner's Contact Information -->
+                <!-- <div class="mb-3">
+                    <label for="owner-name" class="form-label">Owner's Name</label>
+                    <input type="text" class="form-control" id="owner-name" name="owner_name"
+                        placeholder="Enter the owner's name" required>
+                </div> -->
+
+                <!-- users phone number -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="400">
+                    <label for="owner-phone" class="form-label">Owner's Phone Number</label>
+                    <div class="input-group">
+                        <!-- Country Code Display -->
+                        <span class="input-group-text">+91</span>
+                        <!-- User Input Field -->
+                        <input type="text" class="form-control" id="owner-phone" name="owner_phone"
+                            placeholder="Enter 10-digit phone number" pattern="\d{10}"
+                            title="Phone number should be exactly 10 digits." maxlength="10" required>
+                    </div>
+                    <div id="phone-feedback" class="text-danger mt-2"></div>
+                </div>
+
+
+
+                <!-- Optional Owner Image -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="450">
+                    <label for="owner-image" class="form-label">Upload Owner's Image (Optional)</label>
+                    <input type="file" class="form-control" id="owner-image" name="owner_image" accept="image/*">
+                    <div id="owner-image-container" class="mt-2"></div> <!-- Container for owner's image preview -->
+                </div>
+
+
+                <!-- Agreement Duration -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
+                    <label for="agreement-duration" class="form-label">Agreement Duration</label>
+                    <select class="form-select" id="agreement-duration" name="agreement_duration">
+                        <option value="">Choose...</option>
+                        <option value="1_month">1 Month</option>
+                        <option value="6_months">6 Months</option>
+                        <option value="1_year">1 Year</option>
+                        <option value="2_years">2 Years</option>
+                        <option value="more_than_2_years">More than 2 Years</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-between mb-3">
+                    <!-- Clear Form Button -->
+                    <button type="reset" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="500">Clear
+                        Form</button>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary" data-aos="fade-up" data-aos-delay="500">List
+                        Property</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="/frontend/src/assets/js/sell.js"></script>
+
+</body>
+
+</html>

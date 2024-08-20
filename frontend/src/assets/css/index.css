@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    padding-bottom: 0px; 
+    background-color: transparent; 
+    border: none; 
+    box-shadow: none; 
+}
+
+.navbar-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Adds a subtle shadow */
+    background-color: #FFFFFF;
+}
+
+.nav-element-logo {
+    margin-left: 1em;
+    margin-right: 15%;
+}
+
+.nav-element-searchBox {
+    margin-right: 10%;
+}
+
+.nav-item {
+    margin-right: 8px;
+}
+
+.searchBox-input {
+    width: 20vw;
+}
+
+.login-signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.login-signup-btn>#login-btn,
+.login-signup-btn>#signup-btn {
+    margin-left: 4px;
+}
+
+/* General Modal Styles */
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal-header {
+    border-bottom: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+    padding: 16px;
+}
+
+.modal-title {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #212529;
+}
+
+.btn-close {
+    filter: brightness(0.6);
+    transition: filter 0.2s ease;
+}
+
+.btn-close:hover {
+    filter: brightness(1);
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.form-control {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Footer */
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 16px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-footer p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+.modal-footer a {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.modal-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Modal Specific Styles */
+#signupModal .modal-content {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+#signupModal .modal-header {
+    border-bottom: 1px solid #e9ecef;
+    background-color: #f8f9fa;
+    padding: 16px;
+}
+
+#signupModal .modal-title {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #212529;
+}
+
+#signupModal .modal-body {
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+#signupModal .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#signupModal label {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+#signupModal .form-control {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#signupModal .form-control:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+#signupModal .btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#signupModal .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#signupModal .modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 16px;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#signupModal .modal-footer p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+#signupModal .modal-footer a {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#signupModal .modal-footer a:hover {
+    text-decoration: underline;
+}
+
+
+.hero-section {
+    background-image: url("/frontend/src/assets/images/LandingPageBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    color: black;
+    padding: 2em;
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    padding-top: 0;
+
+
+
+}
+
+/* Styling for the hero-content wrapper */
+.hero-section-container {
+    width: 50%;
+    padding: inherit;
+    border-left: 3px solid #DDE2FF;
+    padding-left: 20px;
+    /* background: linear-gradient(to bottom right, #9fa9e3, #9da3ae);
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px); */
+
+}
+
+.hero-content {
+    display: flex;
+    /* Use flexbox for alignment */
+    flex-direction: column;
+    /* Align content vertically */
+    justify-content: space-evenly;
+    /* Even spacing between elements */
+    align-items: flex-start;
+    /* Align content to the left */
+    padding: 20px;
+    /* Add padding for spacing */
+}
+
+/* Styling for the main title (h1) */
+.hero-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+/* Styling for the subheading (h3) */
+.hero-subtitle {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+/* Styling for the description (p) */
+.hero-description {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.5;
+    text-align: justify;
+    width: 80%;
+}
+
+
+
+
+
+
+
+/* styling for mobile or responsive style here  */

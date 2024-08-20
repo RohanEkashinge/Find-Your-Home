@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find your perfect rental property with our comprehensive search options.">
+    <meta name="keywords" content="rental properties, find rental, search properties, real estate">
+    <title>Search Results</title>
+    <link rel="shortcut icon" href="/frontend/src/assets/images/LOGO.png" type="image/x-icon">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/frontend/src/assets/css/search.css"> <!-- External CSS -->
+    
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        <div class="navbar-div">
+            <div class="nav-element-logo">
+                <a class="navbar-brand" href="#">
+                    <img src="/frontend/src/assets/images/LOGO.png" alt="Company Logo" width="100" height="50">
+                    <!-- Company Logo -->
+                </a>
+            </div>
+
+            <div class="nav-element-searchBox">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 searchBox-input" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+
+            <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end nav-element-links" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rent.html">Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="buy.html">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sell.html">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="logoutButton" type="button" class="btn btn-primary">LOGOUT</button>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- category of property types  -->
+    <div id="browse-category-navbar" class="sticky-top">
+        <div id="browse-category-div">
+            <ul id="custom-navbar-nav">
+                <li id="custom-nav-item-all">
+                    <i id="custom-icon-all" class="fas fa-th-large fa-3x browse-category-icon"></i>
+                    <h5>All</h5>
+                </li>
+                <li id="custom-nav-item-house">
+                    <i id="custom-icon-house" class="fas fa-home fa-3x browse-category-icon"></i>
+                    <h5>House</h5>
+                </li>
+                <li id="custom-nav-item-room">
+                    <i id="custom-icon-room" class="fas fa-bed fa-3x browse-category-icon"></i>
+                    <h5>Room</h5>
+                </li>
+                <li id="custom-nav-item-flat">
+                    <i id="custom-icon-flat" class="fas fa-building fa-3x browse-category-icon"></i>
+                    <h5>Flat</h5>
+                </li>
+                <li id="custom-nav-item-store">
+                    <i id="custom-icon-store" class="fas fa-store fa-3x browse-category-icon"></i>
+                    <h5>Store</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Featured Rental Properties -->
+    <section id="property-results" class="featured-rentals bg-light">
+        <div class="container">
+            <h2 class="text-center">Search Results </h2>
+            <div class="row mt-4">
+                <!-- search results will appear here -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Property Details -->
+    <div class="modal fade" id="propertyDetailsModal" tabindex="-1" aria-labelledby="propertyDetailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="propertyDetailsModalLabel">Property Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Property Details will be injected here by JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Want to Sell? -->
+    <section class="sell-property bg-light py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center" data-aos="fade-up">Want to Sell Your Property?</h2>
+            <p class="text-center" data-aos="fade-up" data-aos-delay="50">If you're looking to sell your property, we're here to help.</p>
+            <div class="text-center">
+                <button id="addPropertyButton" type="button" class="btn btn-primary">
+                    Add Property to Sell or Rent
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials -->
+    <section class="testimonials py-5">
+        <div class="container">
+            <h2 class="text-center">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Find Your Home made finding my dream property so easy. I found the perfect house in no
+                            time!"</p>
+                        <footer class="blockquote-footer">Jane Doe</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <blockquote class="blockquote">
+                        <p>"Excellent service and a great selection of properties. Highly recommend!"</p>
+                        <footer class="blockquote-footer">John Smith</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section for Rent Properties -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <h2>Frequently Asked Questions about Renting Property</h2>
+            <div class="accordion" id="faqAccordion">
+
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            What documents do I need to rent a property?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faq1"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            To rent a property, you generally need a government-issued ID, proof of income, references,
+                            and a rental application. Some landlords might require a credit check or additional
+                            information.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            What should I look for in a rental property?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            When looking for a rental property, consider factors such as location, rental price, size,
+                            amenities, lease terms, and proximity to work or school. It's also essential to inspect the
+                            property and ensure it meets your needs.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            How does a rental application work?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A rental application is a form you fill out to provide information to the landlord or
+                            property manager. It includes personal details, employment information, rental history,
+                            references, and sometimes a credit check. The application helps the landlord decide if
+                            you're a suitable tenant.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            What are the typical terms in a rental lease?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A rental lease typically includes terms such as the duration of the lease, rent amount,
+                            security deposit, responsibilities for utilities and maintenance, rules for pets, and
+                            conditions for renewal or termination. Read the lease carefully and ensure you understand
+                            the terms before signing.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                            What are the rights and responsibilities of tenants?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faq5"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Tenants have the right to a safe and habitable property, privacy, and freedom from
+                            discrimination. They also have responsibilities, such as paying rent on time, maintaining
+                            the property, and adhering to lease terms. It's important to understand these rights and
+                            responsibilities to avoid conflicts with the landlord.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Us -->
+    <section class="contact-us py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h4>Get in Touch</h4>
+                    <p>We're here to help with any questions or concerns you may have.</p>
+                    <p><strong>Address:</strong> Kolhapur, Maharashtra 416229</p>
+                    <p><strong>Phone:</strong> +91 8149584900</p>
+                    <p><strong>Email:</strong> ekashingerohan01@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/frontend/src/assets/js/search.js"></script>
+
+</body>
+
+</html>

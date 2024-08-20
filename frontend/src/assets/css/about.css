@@ -1,0 +1,170 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 8px;
+}
+
+.nav-element-logo {
+    margin-left: 1em;
+    margin-right: 15%;
+}
+
+.nav-element-searchBox {
+    margin-right: 10%;
+}
+
+.nav-item {
+    margin-right: 8px;
+}
+
+.searchBox-input {
+    width: 20vw;
+}
+
+.login-signup-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.login-signup-btn>#login-btn,
+.login-signup-btn>#signup-btn {
+    margin-left: 4px;
+}
+
+
+/* General styles for the About Us section */
+/* General styles for the About Us section */
+.about-us {
+    background-color: #f8f9fa; /* Light background color for contrast */
+    color: #343a40; /* Dark text color for readability */
+    padding: 50px 0; /* Padding for top and bottom */
+}
+
+.about-us h2, .about-us h3 {
+    font-family: 'Arial', sans-serif; /* Professional font */
+    color: #007bff; /* Primary color for headings */
+    margin-bottom: 30px; /* Space below headings */
+    display: flex; /* Align icon and text */
+    align-items: center;
+}
+
+.about-us h2 i, .about-us h3 i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.about-us p {
+    font-family: 'Verdana', sans-serif; /* Clear font for paragraphs */
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+.team-member {
+    background-color: #ffffff; /* White background for team members */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Padding inside team member box */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
+    margin-bottom: 30px; /* Space below team member boxes */
+}
+
+.team-member img {
+    border: 5px solid #f1f1f1; /* Border color matching primary color */
+    margin-bottom: 15px; /* Space below image */
+    border-radius: 50%; /* Makes the image circular */
+    width: 100px; /* Ensure the width and height are the same */
+    height: 100px; /* Ensure the width and height are the same */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+}
+
+.team-member h4 {
+    font-size: 1.2em; /* Slightly larger font size for names */
+    color: #343a40; /* Dark color for names */
+}
+
+.team-member p {
+    color: #6c757d; /* Lighter color for roles */
+    margin: 0; /* Remove default margin */
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        margin-bottom: 20px; /* Reduce space on smaller screens */
+    }
+}
+
+/* AOS Animations */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+[data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Add spacing for container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #f1f1f1; /* Light gray background for contrast */
+    padding: 40px 0; /* Padding to create space */
+}
+
+.contact-us h2 {
+    font-size: 2.5em; /* Large font size for the heading */
+    color: #333333; /* Dark color for headings */
+    text-align: center; /* Center the text */
+}
+
+.contact-us h4 {
+    font-size: 1.5em; /* Medium font size for subheadings */
+    color: #333333; /* Dark color for subheadings */
+}
+
+.contact-us p {
+    font-size: 1.1em; /* Slightly larger font size for paragraph text */
+    color: #666666; /* Light gray for paragraph text */
+}
+
+.contact-us strong {
+    color: #333333; /* Dark color for strong text */
+}
+
+.contact-us a {
+    color: #345b85; /* Blue color for links */
+}
+
+.contact-us a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
