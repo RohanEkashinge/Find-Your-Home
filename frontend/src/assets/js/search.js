@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    //function to checkUserId 
     function checkUserId() {
         const userId = sessionStorage.getItem('userId');
         if (!userId) {
@@ -27,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.querySelector('.searchBox-input');
     let properties = [];
     let filteredProperties = [];
-
-
 
     // Function to fetch properties from the API
     function fetchProperties() {
@@ -116,8 +115,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to manually search properties
-    // Function to manually search properties
-    // Function to manually search properties
     function searchProperties(query) {
         query = query.toLowerCase().trim(); // Normalize query by trimming whitespace
         return properties.filter(property => {
@@ -135,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
             );
         });
     }
-
 
     // Function to show property details in a modal
     window.showPropertyDetails = function (id) {
@@ -280,7 +276,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const filteredProperties = properties; // Make sure 'properties' is defined
         displayProperties(filteredProperties);
     }
-
 
     // Add click event listener to the button
     addPropertyButton.addEventListener('click', () => {

@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const featuredRentals = document.querySelector('.featured-rentals .container .row');
 
 
-
-
     let properties = [];
 
     // Function to fetch properties from the API
@@ -82,8 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         }
     }
-
-
 
     // Function to display properties
     function displayProperties(category) {

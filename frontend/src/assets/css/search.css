@@ -53,7 +53,7 @@ a{
 
 /* browsing category styles  */
 
-/* Advanced Effects for Property Categories */
+
 #browse-category-navbar {
     display: flex;
     flex-direction: row;
@@ -61,9 +61,9 @@ a{
     justify-content: center;
     padding: 10px;
     padding-top: 20px;
-    background-color: #f8f9fa; /* Light background color for a modern look */
+    background-color: #f8f9fa;
     position: sticky;
-    top: 72px; /* Adjust this value based on the height of your navbar */
+    top: 72px; 
     z-index: 1000;
     
 }
@@ -73,7 +73,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px; /* Space between items */
+    gap: 20px; 
 }
 
 #custom-navbar-nav {
@@ -95,7 +95,7 @@ a{
 
 /* Styling for icons and text */
 #custom-navbar-nav i {
-    color: #6c757d; /* Default color for icons */
+    color: #6c757d; 
 }
 
 .browse-category-icon{
@@ -105,42 +105,38 @@ a{
 #custom-navbar-nav h5 {
     margin: 5px 0 0;
     font-size: 14px;
-    color: #6c757d; /* Default color for text */
+    color: #6c757d; 
     text-align: center;
 }
 
 /* Hover effect styling */
 #custom-navbar-nav li:hover {
-    transform: scale(1.05); /* Slightly enlarge icon on hover */
-    color: black; /* Change color on hover */
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    transform: scale(1.05);
+    color: black; 
 }
 
 #custom-navbar-nav li:hover i {
-    color: black; /* Change color of icon on hover */
+    color: black; 
 }
 
 #custom-navbar-nav li:hover h5 {
-    color: black !important; /* Change text color on hover */
-    font-weight: bold !important; /* Make text bold on hover */
+    color: black !important; 
+    font-weight: bold !important; 
 }
 
 /* Active state styling */
 #custom-navbar-nav li.active {
-    color: black; /* Color for active text */
-    
+    color: black;     
 }
 
 #custom-navbar-nav li.active i {
-    color: black; /* Color for active icon */
+    color: black;
 }
 
 #custom-navbar-nav li.active h5 {
     color: black;
 
 }
-
-
 
 /* Property Card Container */
 .property-card {
@@ -185,7 +181,7 @@ a{
 
 .property-card__slideshow {
     width: 100%;
-    height: 200px; /* Adjust based on your design */
+    height: 200px; 
 }
 
 .property-card__slide img {
@@ -250,42 +246,21 @@ a{
         margin-bottom: 30px;
     }
 }
-/* Adjusting Pagination Dots */
-.swiper-pagination {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
 
-/* Positioning Navigation Arrows */
-.swiper-button-next, .swiper-button-prev {
-    position: absolute;
-    top: 50%;
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.8); /* lighter background for visibility */
-    border-radius: 50%;
-}
 
 /* Image Display */
 .property-card__image-gallery img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Or use contain if you want the entire image to fit within the space */
+    object-fit: cover; 
 }
 
 /* Adjust Button Color */
 .property-card__actions .btn {
-    background-color: #007bff; /* Lighter shade */
+    background-color: #007bff; 
     border: none;
 }
 
-/* Remove 'New Listing' Button */
 .property-card__badge {
     display: none;
 }
@@ -294,7 +269,7 @@ a{
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ff5722; /* Custom color for the ribbon */
+    background-color: #ff5722; 
     color: white;
     padding: 5px 10px;
     font-size: 14px;
@@ -330,72 +305,66 @@ a{
 }
 
 
-
-
-
 /* Modal Styles */
 .modal-dialog {
-    max-width: 90%; /* Ensure modal is responsive */
+    max-width: 90%; 
 }
 
 .modal-content {
-    border-radius: 8px; /* Rounded corners for the modal */
+    border-radius: 8px; 
 }
 
 .modal-header {
-    border-bottom: 1px solid #ddd; /* Subtle border below the header */
-    background-color: #f7f7f7; /* Light background for the header */
+    border-bottom: 1px solid #ddd; 
+    background-color: #f7f7f7; 
 }
 
 .modal-title {
-    font-size: 1.75em; /* Larger title font size */
+    font-size: 1.75em; 
 }
 
 .modal-body {
-    padding: 20px; /* Padding inside the modal body */
+    padding: 20px; 
 }
 
 .modal-footer {
-    border-top: 1px solid #ddd; /* Subtle border at the top */
-    background-color: #f7f7f7; /* Light background for the footer */
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
 }
 
 .modal-footer .btn {
-    background-color: #e74c3c; /* Button color for 'Close' */
-    color: #fff; /* White text color */
+    background-color: #e74c3c; 
+    color: #fff; 
     border: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    padding: 10px 20px; /* Comfortable padding */
+    border-radius: 5px; 
+    padding: 10px 20px; 
 }
 
 .modal-footer .btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
 }
 
 /* Responsive Image Grid in Modal */
 .modal-body .row {
-    margin-top: 20px; /* Spacing before images */
+    margin-top: 20px; 
 }
 
 .modal-body .img-fluid {
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px; 
 }
 
 .modal-body .col-12 {
-    margin-bottom: 15px; /* Space between images */
+    margin-bottom: 15px; 
 }
 
 /* Owner Image */
 .modal-body .img-fluid.mb-2 {
-    margin-bottom: 20px; /* Space below the owner image */
+    margin-bottom: 20px;
 }
 
 .text-center {
     margin-top: 20px;
 }
-
-
-
 
 
 /* Want to sell */
@@ -413,7 +382,7 @@ a{
 }
 
 .sell-property .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3; 
     color: white;
 }
 
@@ -431,7 +400,7 @@ a{
 }
 
 .blockquote:hover {
-    border-left-color: #0056b3; /* Bootstrap primary color */
+    border-left-color: #0056b3; 
 }
 
 /* Contact us */
@@ -449,7 +418,7 @@ a{
 }
 
 .contact-us .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3; 
     color: white;
 }
 
@@ -460,6 +429,6 @@ a{
 
 .contact-us input:hover,
 .contact-us textarea:hover {
-    border-color: #0056b3; /* Bootstrap primary color */
+    border-color: #0056b3; 
 }
 

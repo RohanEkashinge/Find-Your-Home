@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Call checkUserId when the page loads
+    // Calling checkUserId when the page loads
     checkUserId();
 
     const logoutButton = document.getElementById('logoutButton');
 
-    // Add click event listener for logout
+    // Add click event-listener for logout
     logoutButton.addEventListener('click', () => {
         // Remove userId from session storage
         sessionStorage.removeItem('userId');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(response => response.json())
             .then(data => {
                 properties = data;
-                displayProperties('all'); // Show 'All' properties by default
+                displayProperties('all'); // Showing 'All' properties by default
             })
             .catch(error => console.error('Error fetching properties:', error));
     }
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     ? `<img src="${property.owner_image.base64}" class="img-fluid mb-2" alt="Owner Image">`
                     : '<p>No owner image available.</p>';
 
-                // Populate modal with property details
+                // Populate/create modal with property details
                 modalBody.innerHTML = `
                     <div class="row">
                         <div class="col-md-6">
@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Event listener for category clicks
     navItems.forEach(item => {
         item.addEventListener('click', function () {
+            
             // Remove 'active' class from all items
             navItems.forEach(navItem => navItem.classList.remove('active'));
 

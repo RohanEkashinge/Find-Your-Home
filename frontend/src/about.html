@@ -175,12 +175,12 @@
                 }
             }
 
-            // Call checkUserId when the page loads
+            // CheckUserId when the page loads
             checkUserId();
 
             const logoutButton = document.getElementById('logoutButton');
 
-            // Add click event listener for logout
+            // Add click event listener for logout Button
             logoutButton.addEventListener('click', () => {
                 // Remove userId from session storage
                 sessionStorage.removeItem('userId');

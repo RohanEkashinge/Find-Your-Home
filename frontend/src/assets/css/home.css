@@ -4,21 +4,15 @@
     box-sizing: border-box;
 }
 
-/* body {
-    font-family: 'Arial', sans-serif; 
-    color: #333; 
-} */
-
 a {
     text-decoration: none !important; /* Remove underline from links */
 }
 
 a:hover {
-    text-decoration: underline; /* Underline on hover for links */
+    text-decoration: underline;
 }
 
 /* styling the desktop view , starts here  */
-
 .navbar-div {
     display: flex;
     align-items: center;
@@ -58,19 +52,17 @@ a:hover {
     margin-left: 4px;
 }
 
-
 /* Hero section */
 .hero-section {
     background-color: #e9ecef;
     text-align: center;
     padding: 40px 0;
-    background-image: url("https://img.freepik.com/premium-photo/choice-real-estate-buy-invest-house-searching-concept-with-magnifying-glass-hunt-new-house-home-real-estate-loan-mortgage-investments-concept-generative-ai_379823-9628.jpg?w=1380");
-    
+    background-image: url("https://img.freepik.com/premium-photo/choice-real-estate-buy-invest-house-searching-concept-with-magnifying-glass-hunt-new-house-home-real-estate-loan-mortgage-investments-concept-generative-ai_379823-9628.jpg?w=1380"); 
     
     background-size: cover;
     object-fit: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-section h1 {
@@ -89,161 +81,157 @@ a:hover {
 }
 
 .hero-section .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3;
     color: white;
 }
 
-
 /* Featured Properties */
 .featured-properties-rent, .featured-properties-sale {
-    background-color: #f4f4f4; /* Light gray background for sections */
-    padding: 40px 0; /* Increased padding for better spacing */
+    background-color: #f4f4f4; 
+    padding: 40px 0; 
 }
 
 .featured-properties-rent h2, .featured-properties-sale h2 {
-    font-size: 2.5em; /* Larger heading for emphasis */
-    margin-bottom: 30px; /* Increased spacing below the heading */
-    color: #2c3e50; /* Darker color for better readability */
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
+    color: #2c3e50; 
 }
 
 /* Card Styles */
-/* Card Styles */
 .card {
-    border: none; /* Remove default card border */
-    border-radius: 8px; /* Rounded corners for a modern look */
-    overflow: hidden; /* Ensure image and content stay within rounded corners */
+    border: none; 
+    border-radius: 8px; 
+    overflow: hidden; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; /* White background for the card */
-    display: flex; /* Flexbox layout for card */
-    flex-direction: row; /* Row layout */
-    height: 100%; /* Ensure card takes full height of its container */
+    background-color: #fff; 
+    display: flex; 
+    flex-direction: row; 
+    height: 100%;
 }
 
 .card:hover {
     transform: translateY(-8px); /* Lift card on hover */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
 }
 
 .card .row.no-gutters {
-    display: flex; /* Flexbox layout for the row */
-    flex-direction: row; /* Row layout */
-    align-items: center; /* Vertically center items */
-    height: 100%; /* Ensure the row takes full height of its container */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    height: 100%; 
 }
 
 .card .col-md-4 {
-    display: flex; /* Flexbox layout for the image column */
-    justify-content: center; /* Horizontally center the image */
-    align-items: center; /* Vertically center the image */
-    padding: 15px; /* Padding around the image */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px; 
 }
 
 .card img {
-    max-width: 100%; /* Ensure image fits within column width */
-    height: auto; /* Maintain aspect ratio of the image */
-    border-bottom: 1px solid #ddd; /* Subtle border below the image */
+    max-width: 100%; 
+    height: auto; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .card .col-md-8 {
-    display: flex; /* Flexbox layout for the text column */
-    flex-direction: column; /* Column layout for text content */
-    justify-content: center; /* Vertically center text content */
-    padding: 20px; /* Padding around the text content */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px; 
 }
 
 .card-body {
-    padding: 0; /* Remove extra padding to be managed by .col-md-8 */
+    padding: 0; 
 }
 
 .card-title {
-    font-size: 1.5em; /* Increase font size for the title */
-    margin-bottom: 15px; /* Spacing below the title */
-    color: #2c3e50; /* Consistent color with headings */
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+    color: #2c3e50; 
 }
 
 .card-text {
-    font-size: 0.9em; /* Slightly smaller font size for text */
-    color: #7f8c8d; /* Light gray text for less emphasis */
-    margin-bottom: 10px; /* Spacing between text items */
+    font-size: 0.9em; 
+    color: #7f8c8d; 
+    margin-bottom: 10px; 
 }
 
 .card-body .btn {
-    background-color: #3498db; /* Primary button color */
-    color: #fff; /* White text color */
+    background-color: #3498db; 
+    color: #fff; 
     border: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    padding: 10px 20px; /* Comfortable padding for the button */
+    border-radius: 5px; 
+    padding: 10px 20px; 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-body .btn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight scale effect on hover */
+    background-color: #2980b9;
+    transform: scale(1.05); 
 }
 
 .card-body .btn:focus, .card-body .btn:active {
-    outline: none; /* Remove default focus outline */
-    box-shadow: none; /* Remove default button shadow */
+    outline: none; 
+    box-shadow: none; 
 }
-
-
 
 /* Modal Styles */
 .modal-dialog {
-    max-width: 90%; /* Ensure modal is responsive */
+    max-width: 90%; 
 }
 
 .modal-content {
-    border-radius: 8px; /* Rounded corners for the modal */
+    border-radius: 8px; 
 }
 
 .modal-header {
-    border-bottom: 1px solid #ddd; /* Subtle border below the header */
-    background-color: #f7f7f7; /* Light background for the header */
+    border-bottom: 1px solid #ddd; 
+    background-color: #f7f7f7; 
 }
 
 .modal-title {
-    font-size: 1.75em; /* Larger title font size */
+    font-size: 1.75em;
 }
 
 .modal-body {
-    padding: 20px; /* Padding inside the modal body */
+    padding: 20px; 
 }
 
 .modal-footer {
-    border-top: 1px solid #ddd; /* Subtle border at the top */
-    background-color: #f7f7f7; /* Light background for the footer */
+    border-top: 1px solid #ddd; 
+    background-color: #f7f7f7; 
 }
 
 .modal-footer .btn {
-    background-color: #e74c3c; /* Button color for 'Close' */
-    color: #fff; /* White text color */
+    background-color: #e74c3c; 
+    color: #fff; 
     border: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    padding: 10px 20px; /* Comfortable padding */
+    border-radius: 5px; 
+    padding: 10px 20px; 
 }
 
 .modal-footer .btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
 }
 
 /* Responsive Image Grid in Modal */
 .modal-body .row {
-    margin-top: 20px; /* Spacing before images */
+    margin-top: 20px; 
 }
 
 .modal-body .img-fluid {
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px; 
 }
 
 .modal-body .col-12 {
-    margin-bottom: 15px; /* Space between images */
+    margin-bottom: 15px;
 }
 
 /* Owner Image */
 .modal-body .img-fluid.mb-2 {
-    margin-bottom: 20px; /* Space below the owner image */
+    margin-bottom: 20px; 
 }
 
 .text-center {
@@ -265,7 +253,7 @@ a:hover {
 }
 
 .sell-property .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3; 
     color: white;
 }
 
@@ -283,7 +271,7 @@ a:hover {
 }
 
 .blockquote:hover {
-    border-left-color: #0056b3; /* Bootstrap primary color */
+    border-left-color: #0056b3;
 }
 
 /* Contact us */
@@ -304,7 +292,7 @@ a:hover {
 }
 
 .contact-us .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3; 
     color: white;
 }
 
@@ -315,10 +303,7 @@ a:hover {
 
 .contact-us input:hover,
 .contact-us textarea:hover {
-    border-color: #0056b3; /* Bootstrap primary color */
+    border-color: #0056b3; 
 }
-
-
-
 
 /* styling the desktop view, ends here  */

@@ -46,11 +46,10 @@
 
 
 /* General styles for the About Us section */
-/* General styles for the About Us section */
 .about-us {
-    background-color: #f8f9fa; /* Light background color for contrast */
+    background-color: #f8f9fa; 
     color: #343a40; /* Dark text color for readability */
-    padding: 50px 0; /* Padding for top and bottom */
+    padding: 50px 0; 
 }
 
 .about-us h2, .about-us h3 {
@@ -66,7 +65,7 @@
 }
 
 .about-us p {
-    font-family: 'Verdana', sans-serif; /* Clear font for paragraphs */
+    font-family: 'Verdana', sans-serif; 
     line-height: 1.6; /* Increased line height for readability */
     margin-bottom: 20px; /* Space below paragraphs */
 }
@@ -74,7 +73,7 @@
 .team-member {
     background-color: #ffffff; /* White background for team members */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px; /* Padding inside team member box */
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition effects */
     margin-bottom: 30px; /* Space below team member boxes */
@@ -84,19 +83,19 @@
     border: 5px solid #f1f1f1; /* Border color matching primary color */
     margin-bottom: 15px; /* Space below image */
     border-radius: 50%; /* Makes the image circular */
-    width: 100px; /* Ensure the width and height are the same */
-    height: 100px; /* Ensure the width and height are the same */
+    width: 100px; 
+    height: 100px; 
     object-fit: cover; /* Ensures the image covers the circle without distortion */
 }
 
 .team-member h4 {
-    font-size: 1.2em; /* Slightly larger font size for names */
+    font-size: 1.2em; /* Slightly larger font size for names of team member */
     color: #343a40; /* Dark color for names */
 }
 
 .team-member p {
     color: #6c757d; /* Lighter color for roles */
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 @media (max-width: 768px) {
@@ -137,28 +136,28 @@
 
 /* Contact Us Section */
 .contact-us {
-    background-color: #f1f1f1; /* Light gray background for contrast */
-    padding: 40px 0; /* Padding to create space */
+    background-color: #f1f1f1; 
+    padding: 40px 0; 
 }
 
 .contact-us h2 {
     font-size: 2.5em; /* Large font size for the heading */
-    color: #333333; /* Dark color for headings */
-    text-align: center; /* Center the text */
+    color: #333333; 
+    text-align: center;
 }
 
 .contact-us h4 {
     font-size: 1.5em; /* Medium font size for subheadings */
-    color: #333333; /* Dark color for subheadings */
+    color: #333333; 
 }
 
 .contact-us p {
     font-size: 1.1em; /* Slightly larger font size for paragraph text */
-    color: #666666; /* Light gray for paragraph text */
+    color: #666666; 
 }
 
 .contact-us strong {
-    color: #333333; /* Dark color for strong text */
+    color: #333333; 
 }
 
 .contact-us a {
@@ -166,5 +165,5 @@
 }
 
 .contact-us a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; /* Adding underline on hover */
 }

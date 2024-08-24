@@ -25,7 +25,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     .then(data => {
         // alert('Success: ' + data.message + ' User ID: ' + data.userId); // Display the message and userId
         sessionStorage.setItem('userId', data.userId);
-        window.location.href = 'http://127.0.0.1:5500/frontend/src/home.html'; // Redirect to another page or reload
+        window.location.href = 'http://127.0.0.1:5500/frontend/src/home.html'; 
         form.reset();
     })
     .catch(error => {
@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         })
         .then(data => {
-            // alert('Login successful! User ID: ' + data.userId);
             sessionStorage.setItem('userId', data.userId); // Display the userId
             loginForm.reset();
             window.location.href = 'http://127.0.0.1:5500/frontend/src/home.html'; // Redirect to another page or reload

@@ -52,11 +52,10 @@ a{
 .hero-section {
     text-align: center;
     padding: 40px 0;
-    /* background-image: url("https://img.freepik.com/premium-photo/choice-real-estate-buy-invest-house-searching-concept-with-magnifying-glass-hunt-new-house-home-real-estate-loan-mortgage-investments-concept-generative-ai_379823-9628.jpg?w=1380"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom right, #e7e7e7, #dbe4f4); /* Purple to blue gradient */
+    background-image: linear-gradient(to bottom right, #e7e7e7, #dbe4f4); 
 
 }
 
@@ -72,15 +71,15 @@ a{
 .hero-section .btn {
     font-size: 1.1em;
     padding: 10px 20px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease;
 }
 
 .hero-section .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color on hover */
-    color: white; /* Change text color on hover */
+    background-color: #0056b3; 
+    color: white; 
 }
 
-/* Advanced Effects for Property Categories */
+
 #browse-category-navbar {
     display: flex;
     flex-direction: row;
@@ -88,9 +87,9 @@ a{
     justify-content: center;
     padding: 10px;
     padding-top: 20px;
-    background-color: #f8f9fa; /* Light background color for a modern look */
+    background-color: #f8f9fa; 
     position: sticky;
-    top: 56px; /* Adjust this value based on the height of your navbar */
+    top: 56px; 
     z-index: 1000;
     
 }
@@ -132,34 +131,33 @@ a{
 #custom-navbar-nav h5 {
     margin: 5px 0 0;
     font-size: 14px;
-    color: #6c757d; /* Default color for text */
+    color: #6c757d; 
     text-align: center;
 }
 
 /* Hover effect styling */
 #custom-navbar-nav li:hover {
-    transform: scale(1.05); /* Slightly enlarge icon on hover */
-    color: black; /* Change color on hover */
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    transform: scale(1.05);
+    color: black; 
 }
 
 #custom-navbar-nav li:hover i {
-    color: black; /* Change color of icon on hover */
+    color: black; 
 }
 
 #custom-navbar-nav li:hover h5 {
-    color: black !important; /* Change text color on hover */
-    font-weight: bold !important; /* Make text bold on hover */
+    color: black !important; 
+    font-weight: bold !important; 
 }
 
 /* Active state styling */
 #custom-navbar-nav li.active {
-    color: black; /* Color for active text */
+    color: black;
     
 }
 
 #custom-navbar-nav li.active i {
-    color: black; /* Color for active icon */
+    color: black;
 }
 
 #custom-navbar-nav li.active h5 {
@@ -167,84 +165,81 @@ a{
 
 }
 
-
-
-/* Card Styles */
 /* Card Styles */
 .card {
-    border: none; /* Remove default card border */
-    border-radius: 8px; /* Rounded corners for a modern look */
+    border: none; 
+    border-radius: 8px; 
     overflow: hidden; /* Ensure image and content stay within rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; /* White background for the card */
-    display: flex; /* Flexbox layout for card */
-    flex-direction: row; /* Row layout */
-    max-width: 300px; /* Reduce card width */
-    margin: 0 auto; /* Center the card horizontally */
-    height: auto; /* Adjust height automatically */
+    background-color: #fff; 
+    display: flex; 
+    flex-direction: row;
+    max-width: 300px;
+    margin: 0 auto; 
+    height: auto; 
 }
 
 .card:hover {
-    transform: translateY(-8px); /* Lift card on hover */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card .row.no-gutters {
-    display: flex; /* Flexbox layout for the row */
-    flex-direction: row; /* Row layout */
-    align-items: center; /* Vertically center items */
-    height: 100%; /* Ensure the row takes full height of its container */
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    height: 100%; 
 }
 
 .card .col-md-4 {
-    display: flex; /* Flexbox layout for the image column */
-    justify-content: center; /* Horizontally center the image */
-    align-items: center; /* Vertically center the image */
-    padding: 15px; /* Padding around the image */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px; 
 }
 
 .card img {
-    max-width: 100%; /* Ensure image fits within column width */
-    height: auto; /* Maintain aspect ratio of the image */
-    border-bottom: 1px solid #ddd; /* Subtle border below the image */
+    max-width: 100%; 
+    height: auto; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .card .col-md-8 {
-    display: flex; /* Flexbox layout for the text column */
-    flex-direction: column; /* Column layout for text content */
-    justify-content: center; /* Vertically center text content */
-    padding: 20px; /* Padding around the text content */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px;
 }
 
 .card-body {
-    padding: 0; /* Remove extra padding to be managed by .col-md-8 */
+    padding: 0; 
 }
 
 .card-title {
-    font-size: 1.5em; /* Increase font size for the title */
-    margin-bottom: 15px; /* Spacing below the title */
-    color: #2c3e50; /* Consistent color with headings */
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+    color: #2c3e50; 
 }
 
 .card-text {
-    font-size: 0.9em; /* Slightly smaller font size for text */
-    color: #7f8c8d; /* Light gray text for less emphasis */
-    margin-bottom: 10px; /* Spacing between text items */
+    font-size: 0.9em; 
+    color: #7f8c8d; 
+    margin-bottom: 10px;
 }
 
 .card-body .btn {
-    background-color: #3498db; /* Primary button color */
-    color: #fff; /* White text color */
+    background-color: #3498db; 
+    color: #fff; 
     border: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    padding: 10px 20px; /* Comfortable padding for the button */
+    border-radius: 5px; 
+    padding: 10px 20px; 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card-body .btn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight scale effect on hover */
+    background-color: #2980b9; 
+    transform: scale(1.05); 
 }
 
 .card-body .btn:focus, .card-body .btn:active {
@@ -252,71 +247,66 @@ a{
     box-shadow: none; /* Remove default button shadow */
 }
 
-
-
 /* Modal Styles */
 .modal-dialog {
-    max-width: 90%; /* Ensure modal is responsive */
+    max-width: 90%;
 }
 
 .modal-content {
-    border-radius: 8px; /* Rounded corners for the modal */
+    border-radius: 8px; 
 }
 
 .modal-header {
-    border-bottom: 1px solid #ddd; /* Subtle border below the header */
-    background-color: #f7f7f7; /* Light background for the header */
+    border-bottom: 1px solid #ddd; 
+    background-color: #f7f7f7; 
 }
 
 .modal-title {
-    font-size: 1.75em; /* Larger title font size */
+    font-size: 1.75em; 
 }
 
 .modal-body {
-    padding: 20px; /* Padding inside the modal body */
+    padding: 20px; 
 }
 
 .modal-footer {
-    border-top: 1px solid #ddd; /* Subtle border at the top */
-    background-color: #f7f7f7; /* Light background for the footer */
+    border-top: 1px solid #ddd; 
+    background-color: #f7f7f7;
 }
 
 .modal-footer .btn {
-    background-color: #e74c3c; /* Button color for 'Close' */
-    color: #fff; /* White text color */
+    background-color: #e74c3c; 
+    color: #fff; 
     border: none;
-    border-radius: 5px; /* Rounded corners for the button */
-    padding: 10px 20px; /* Comfortable padding */
+    border-radius: 5px;
+    padding: 10px 20px; 
 }
 
 .modal-footer .btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
 }
 
 /* Responsive Image Grid in Modal */
 .modal-body .row {
-    margin-top: 20px; /* Spacing before images */
+    margin-top: 20px; 
 }
 
 .modal-body .img-fluid {
-    border-radius: 8px; /* Rounded corners for images */
+    border-radius: 8px; 
 }
 
 .modal-body .col-12 {
-    margin-bottom: 15px; /* Space between images */
+    margin-bottom: 15px;
 }
 
 /* Owner Image */
 .modal-body .img-fluid.mb-2 {
-    margin-bottom: 20px; /* Space below the owner image */
+    margin-bottom: 20px; 
 }
 
 .text-center {
     margin-top: 20px;
 }
-
-
-
 
 
 /* Want to sell */
@@ -334,7 +324,7 @@ a{
 }
 
 .sell-property .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3; 
     color: white;
 }
 
@@ -352,7 +342,7 @@ a{
 }
 
 .blockquote:hover {
-    border-left-color: #0056b3; /* Bootstrap primary color */
+    border-left-color: #0056b3;
 }
 
 /* Contact us */
@@ -370,7 +360,7 @@ a{
 }
 
 .contact-us .btn:hover {
-    background-color: #0056b3; /* Bootstrap primary color */
+    background-color: #0056b3; 
     color: white;
 }
 
@@ -381,6 +371,6 @@ a{
 
 .contact-us input:hover,
 .contact-us textarea:hover {
-    border-color: #0056b3; /* Bootstrap primary color */
+    border-color: #0056b3; 
 }
 
